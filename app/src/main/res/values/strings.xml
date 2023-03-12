@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dairy Book</string>
+    <string name="todo">TODO</string>
+    <string name="today_shift">Today Shift</string>
+    <string name="morning">Morning</string>
+    <string name="equal">=</string>
+    <string name="evening">Evening</string>
+    <string name="quantity_l">Quantity(L)</string>
+    <string name="fat">Fat %</string>
+    <string name="s_n_f">S.N.F.</string>
+    <string name="rate">Rate</string>
+    <string name="amount">Amount</string>
+    <string name="shift_name">Shift Name</string>
+    <string name="yesterday_shift">Yesterday Shift</string>
+    <string name="dashboard">Dashboard</string>
+</resources>
