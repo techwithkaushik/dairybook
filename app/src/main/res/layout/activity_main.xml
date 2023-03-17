@@ -9,18 +9,18 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginLeft="@dimen/five_dp"
-            android:layout_marginRight="@dimen/five_dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_marginRight="@dimen/ten_dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <include
                 android:id="@+id/dashboard"
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/today_shift"
+                android:text="@string/today"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -41,15 +41,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/border"
                 android:orientation="horizontal">
 
                 <include
-                    android:id="@+id/mrg_lyt"
+                    android:id="@+id/today_lyt"
                     layout="@layout/shift" />
 
-                <include
-                    android:id="@+id/evn_lyt"
-                    layout="@layout/shift" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <TextView
@@ -57,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:text="@string/yesterday_shift"
+                android:text="@string/yesterday"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -65,14 +63,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/ten_dp"
+                android:background="@drawable/border"
                 android:orientation="horizontal">
 
                 <include
-                    android:id="@+id/yst_mrg_lyt"
-                    layout="@layout/shift" />
-
-                <include
-                    android:id="@+id/yst_evn_lyt"
+                    android:id="@+id/ysrtday_lyt"
                     layout="@layout/shift" />
             </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>

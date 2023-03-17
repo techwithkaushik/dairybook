@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Dairy Book</string>
     <string name="todo">TODO</string>
-    <string name="today_shift">Today Shift</string>
+    <string name="today">Today</string>
     <string name="morning">Morning</string>
     <string name="equal">=</string>
     <string name="evening">Evening</string>
@@ -11,6 +11,7 @@
     <string name="rate">Rate</string>
     <string name="amount">Amount</string>
     <string name="shift_name">Shift Name</string>
-    <string name="yesterday_shift">Yesterday Shift</string>
+    <string name="yesterday">Yesterday</string>
     <string name="dashboard">Dashboard</string>
+    <string name="particular">Particular</string>
 </resources>
