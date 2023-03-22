@@ -1,4 +1,4 @@
-name: Build and test
+name: Build and Test
 
 on:
   push:
@@ -22,13 +22,6 @@ jobs:
         with:
           access_token: ${{ github.token }}
 
-      - name: Decode Keystore
-        id: decode_keystore
-        uses: timheuer/base64-to-file@v1.2
-        with:
-          fileName: 'dev_keystore.jks'
-          encodedString: ${{ secrets.KEYSTORE }}
-
       - name: Checkout
         uses: actions/checkout@v3
 
@@ -38,7 +31,7 @@ jobs:
           java-version: "17"
           distribution: "temurin"
 
-      - name: Restore cache
+      - name: Restore gradle cache
         uses: actions/cache@v3
         with:
           path: |
@@ -54,9 +47,9 @@ jobs:
           SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
           SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
 
-      - name: Upload  Debug APK
+      - name: Upload Debug APK
         uses: actions/upload-artifact@v3
         with:
-          name: apk-debug
+          name: dairybook
           path: app/build/outputs/apk/debug/**.apk
 
